@@ -1,0 +1,218 @@
+/* ===== Reset and Base ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    /* Background image with overlay */
+    position: relative;
+    min-height: 100vh;
+    background-image: url('images/c2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    /* To ensure text readability */
+    z-index: 0;
+}
+
+/* Add a translucent pink overlay */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(252, 228, 236, 0); /* soft pink overlay */
+    pointer-events: none;
+    z-index: -1;
+}
+
+/* ===== Header with Blossom Theme ===== */
+header {
+    background-color: rgba(252, 228, 236, 0.85); /* semi-transparent to show background */
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.hd {
+    font-size: 30px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+/* ===== Navigation Menu (Admin Style) ===== */
+.home {
+    display: inline-block;
+    margin: 5px 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ec407a;
+    background-color: #fff;
+    border: 2px solid #f8bbd0;
+    padding: 10px 16px;
+    border-radius: 6px;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.menu a:hover {
+    background-color: #ec407a;
+    color: #fff;
+}
+
+/* ===== Section Title ===== */
+.main {
+    text-align: center;
+    margin: 40px 0 20px;
+    font-size: 22px;
+    color: #000000;
+    font-weight: bold;
+}
+
+/* ===== Table Container (.tab) - Wide for tables ===== */
+.tab {
+    max-width: 95%;
+    margin: 50px auto;
+    overflow-x: auto;
+    background-color: rgba(255, 255, 255, 0.95); /* slightly transparent white */
+    border: 2px solid #f8bbd0;
+    border-radius: 10px;
+    padding: 30px 40px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+}
+
+/* ===== Form Container (.form-tab) - Narrow and centered for smaller user forms ===== */
+.form-tab {
+    max-width: 480px;
+    margin: 50px auto;
+    background-color: rgba(255, 255, 255, 0.95); /* slightly transparent white */
+    border: 2px solid #f8bbd0;
+    border-radius: 10px;
+    padding: 30px 40px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+}
+
+/* ===== Form Inputs ===== */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="file"],
+textarea,
+select {
+    width: 100%;
+    padding: 12px 16px;
+    margin: 12px 0 22px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+input[type="submit"] {
+    background-color: #f48fb1;
+    color: #000000;
+    padding: 14px 24px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #ec407a;
+    color: #ffffff;
+}
+
+/* ===== Table Styling inside .tab ===== */
+.tab table {
+    width: 100%;
+    border-collapse: collapse;
+    border: none;
+    font-size: 16px;
+    background-color: #ffffff; /* White background */
+}
+
+.tab th {
+    background-color: #f8bbd0;
+    color: #000000;
+    text-transform: uppercase;
+    padding: 16px 20px;
+    border: 1px solid #f48fb1;
+    text-align: left;
+}
+
+.tab td {
+    background-color: #ffffff; /* White background */
+    border: 1px solid #f48fb1;
+    padding: 16px 20px;
+    text-align: left;
+}
+
+.tab tr:hover td {
+    background-color: #f8bbd0;
+    color: #fff;
+}
+
+/* ===== Utility Classes ===== */
+.text-center {
+    text-align: center;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Button style example */
+.red {
+    background-color: #f06292;
+    color: white;
+    padding: 8px 12px;
+    text-align: center;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.red:hover {
+    background-color: #c2185b;
+}
+
+/* Warning message box */
+.warning-message {
+    max-width: 480px;        /* limit width */
+    margin: 20px auto;       /* center horizontally with vertical margin */
+    padding: 12px 20px;
+    background-color: #ffccbc;  /* light warning color */
+    color: #b71c1c;             /* dark red text */
+    border: 1.5px solid #f44336; /* warning red border */
+    border-radius: 6px;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(244, 67, 54, 0.3);
+}
