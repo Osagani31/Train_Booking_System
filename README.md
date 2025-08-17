@@ -46,13 +46,19 @@ A full-stack **Train Ticket Booking System** developed using **Java (JSP & Servl
 
 ## 📸 Screenshots
 
+## 📸 Project Screenshots  
+
+| **Page**          | **Screenshot** |
+|--------------------|----------------|
+| **Admin Login**    | <img width="600" alt="Admin Login" src="https://github.com/user-attachments/assets/9204d538-3ef6-484b-b86b-35566496ff75" /> |
+| **Sign In**        | <img width="600" alt="Sign In" src="https://github.com/user-attachments/assets/ff106d45-798a-4a17-80ae-47c3837a2b22" /> |
+| **Home Page**      | <img width="600" alt="Home Page" src="https://github.com/user-attachments/assets/1d280705-55a6-44e8-8558-4596c1103492" /> |
+| **View Trains (1)**| <img width="600" alt="View Trains 1" src="https://github.com/user-attachments/assets/7d8031cc-097d-4b4d-b98a-c3d6ced4d806" /> |
+| **View Trains (2)**| <img width="600" alt="View Trains 2" src="https://github.com/user-attachments/assets/dc7f0385-4504-4c3c-99ee-6c8ed3ec1ef6" /> |
+| **Search Train**   | <img width="600" alt="Search Train" src="https://github.com/user-attachments/assets/5112a870-4c22-4d6c-af76-abbc4a2c4a60" /> |
+
 
 
 ---
 
-## ⚙️ Installation & Setup
 
-### 1️⃣ Clone the Repository
-
-```bash
-git clone https://github.com/Osagani31/Train-Booking-System.git
