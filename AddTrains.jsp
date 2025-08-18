@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>E-Trains</title>
+<link rel="stylesheet" href="Css/UserHome.css">
+</head>
+<body>
+	<header>
+		<h1 class="hd">National Ticket Booking Spot</h1>
+		<div class="home">
+			<p class="menu">
+				<a href="AdminHome.jsp">Home</a>
+			</p>
+		</div>
+		<div class="home">
+			<p class="menu">
+				<a href="adminviewtrainfwd">View Trains</a>
+			</p>
+		</div>
+		<div class="home">
+			<p class="menu">
+				<a href="adminsearchtrainfwd">Search By TrainNo</a>
+			</p>
+		</div>
+
+		<div class="home">
+			<p class="menu">
+				<a href="addtrainfwd">Add Train</a>
+			</p>
+		</div>
+		<div class="home">
+			<p class="menu">
+				<a href="cancletrainfwd">Delete Train </a>
+			</p>
+		</div>
+		<div class="home">
+			<p class="menu">
+				<a href="updatetrain">Update Train Details</a>
+			</p>
+		</div>
+		<div class="home">
+			<p class="menu">
+				<a href="adminlogout">Logout</a>
+			</p>
+		</div>
+	</header>
+	<div class='main'>
+		<p class='menu'> Add Trains </p>
+	</div>
+	<form class="tab" action="adminaddtrain" method="post">
+		<br /> Train Number:<input type="text" name="trainno"><br />
+		<br /> Train Name: <input type="text" name="trainname"><br />
+		<br /> From Station: <input type="text" name="fromstation"><br />
+		<br /> To Station: <input type="text" name="tostation"><br />
+		<br /> Available: <input type="text" name="available"><br />
+		<br /> Fare (INR): <input type="text" name="fare"><br />
+		<br /> <input type="submit" value=" ADD TRAIN ">
+	</form>
+	<br />
+</body>
+</html>
+
